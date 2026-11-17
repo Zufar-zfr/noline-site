@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rulesVersion": 2,
+  "rulesVersion": 3,
   "updatedAt": "2026-11-17",
   "feedLimit": 10,
   "platforms": {
@@ -182,7 +182,13 @@
           "ytm-pivot-bar-item-renderer:has(.pivot-w2w)",
           "ytm-pivot-bar-item-renderer:has(.pivot-home)",
           "ytm-home-logo"
-        ]
+        ],
+        "signedOutNotice": {
+          "en": { "text": "Sign in to YouTube to see videos from your subscriptions.", "button": "Sign in" },
+          "ru": { "text": "Войдите в YouTube, чтобы видеть видео из ваших подписок.", "button": "Войти" },
+          "uk": { "text": "Увійдіть у YouTube, щоб бачити відео з ваших підписок.", "button": "Увійти" },
+          "kk": { "text": "Жазылымдарыңыздағы бейнелерді көру үшін YouTube-қа кіріңіз.", "button": "Кіру" }
+        }
       },
       "hideSelectors": [
         "a[href*='/shorts/']",
