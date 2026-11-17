@@ -1,11 +1,20 @@
 {
   "schemaVersion": 1,
+  "rulesVersion": 1,
+  "updatedAt": "2026-11-17",
   "feedLimit": 10,
   "platforms": {
     "instagram": {
       "homeUrl": "https://www.instagram.com/",
       "allowedHosts": ["instagram.com", "facebook.com"],
       "externalHosts": ["messenger.com"],
+      "likeCountSelectors": [
+        "a[href$=\"/liked_by/\"]",
+        "a[href*=\"/liked_by/\"] + span",
+        "section span:has(> a[href*=\"/liked_by/\"])"
+      ],
+      "exploreSelectors": ["a[href*=\"/p/\"]", "a[href*=\"/reel/\"]"],
+      "explorePaths": ["/explore"],
       "linkRedirects": [
         { "host": "l.instagram.com", "param": "u" },
         { "host": "l.facebook.com", "param": "u" },
