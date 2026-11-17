@@ -1,11 +1,16 @@
 {
   "schemaVersion": 1,
-  "rulesVersion": 1,
+  "rulesVersion": 2,
   "updatedAt": "2026-11-17",
   "feedLimit": 10,
   "platforms": {
     "instagram": {
       "homeUrl": "https://www.instagram.com/",
+      "followingFeed": {
+        "url": "https://www.instagram.com/?variant=following",
+        "redirectPaths": ["/"],
+        "hideSelectors": ["a[href*='variant=home'] svg"]
+      },
       "allowedHosts": ["instagram.com", "facebook.com"],
       "externalHosts": ["messenger.com"],
       "likeCountSelectors": [
@@ -170,6 +175,15 @@
       "shortWatchGuard": { "watchPath": "/watch", "idParam": "v", "canonicalPathPrefix": "/shorts/" },
       "feedCutoffExcludePaths": ["/results"],
       "subscriptionsUrl": "https://m.youtube.com/feed/subscriptions",
+      "followingFeed": {
+        "url": "https://m.youtube.com/feed/subscriptions",
+        "redirectPaths": ["/", "/feed/explore", "/feed/trending", "/feed/what_to_watch"],
+        "navRetargetSelectors": [
+          "ytm-pivot-bar-item-renderer:has(.pivot-w2w)",
+          "ytm-pivot-bar-item-renderer:has(.pivot-home)",
+          "ytm-home-logo"
+        ]
+      },
       "hideSelectors": [
         "a[href*='/shorts/']",
         "ytm-video-with-context-renderer:has(a[href*='/shorts/'])",
