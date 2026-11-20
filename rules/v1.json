@@ -1,15 +1,21 @@
 {
   "schemaVersion": 1,
-  "rulesVersion": 4,
-  "updatedAt": "2026-11-17",
+  "rulesVersion": 5,
+  "updatedAt": "2026-11-20",
   "feedLimit": 10,
   "platforms": {
     "instagram": {
       "homeUrl": "https://www.instagram.com/",
       "followingFeed": {
-        "url": "https://www.instagram.com/?variant=following",
-        "redirectPaths": ["/"],
-        "hideSelectors": ["a[href*='variant=home'] svg"]
+        "url": "https://www.instagram.com/?variant=home",
+        "redirectPaths": [],
+        "hideUnfollowedPosts": true,
+        "followButtonTextLabels": [
+          "Follow", "Follow back", "Подписаться", "Подписаться в ответ", "Підписатися",
+          "Seguir", "Seguir de volta", "Seguir también", "Suivre", "S'abonner", "Folgen",
+          "Segui", "Takip et", "Takip Et", "متابعة", "फ़ॉलो करें", "Ikuti", "フォローする",
+          "フォロー", "팔로우", "Theo dõi", "ติดตาม", "Жазылу", "Obserwuj", "Kuzatish"
+        ]
       },
       "allowedHosts": ["instagram.com", "facebook.com"],
       "externalHosts": ["messenger.com"],
@@ -30,6 +36,7 @@
         { "host": "lm.facebook.com", "param": "u" }
       ],
       "chromeColor": "#FFFFFF",
+      "chromeColorDark": "#0C1014",
       "feedItemSelectors": ["main article"],
       "guardMultiVideoViewer": true,
       "hideAppPromoBanner": true,
@@ -168,6 +175,7 @@
       "homeUrl": "https://m.youtube.com/",
       "allowedHosts": ["youtube.com", "google.com"],
       "chromeColor": "#FFFFFF",
+      "chromeColorDark": "#0F0F0F",
       "feedItemSelectors": [
         "ytm-rich-item-renderer",
         "ytm-item-section-renderer .item, ytm-compact-video-renderer, ytm-video-with-context-renderer"
