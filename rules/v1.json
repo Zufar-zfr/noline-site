@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rulesVersion": 3,
+  "rulesVersion": 4,
   "updatedAt": "2026-11-17",
   "feedLimit": 10,
   "platforms": {
@@ -13,7 +13,11 @@
       },
       "allowedHosts": ["instagram.com", "facebook.com"],
       "externalHosts": ["messenger.com"],
+      "likeCountTextLabels": [
+        "нравится»", "отметок", "likes", "просмотр", "views", "plays", "воспроизвед"
+      ],
       "likeCountSelectors": [
+        "section > div > span:first-child + span[role=\"button\"]",
         "a[href$=\"/liked_by/\"]",
         "a[href*=\"/liked_by/\"] + span",
         "section span:has(> a[href*=\"/liked_by/\"])"
