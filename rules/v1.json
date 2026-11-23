@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rulesVersion": 6,
+  "rulesVersion": 7,
   "updatedAt": "2026-11-20",
   "feedLimit": 10,
   "platforms": {
@@ -41,14 +41,14 @@
       "guardMultiVideoViewer": true,
       "hideAppPromoBanner": true,
       "homeButtonSelector": "a[href^='/reels']",
-      "blockedPathPrefixes": ["/reel", "/reels", "/*/reel", "/*/reels"],
+      "blockedPathPrefixes": ["/reels/$"],
       "feedCutoffOnlyPaths": ["/"],
       "vetFeedItems": true,
       "virtualizedFeed": true,
       "feedCutoffExcludePaths": ["/p", "/explore", "/direct", "/stories", "/accounts"],
       "hideSelectors": [
-        "a[href*='/reel/']",
-        "a[href$='/reels/']:not([href='/reels/'])"
+        "article a[href*='/reel/']",
+        "a[href='/reels/']"
       ],
       "hideTextLabels": [],
       "recommendationSelectors": [],
