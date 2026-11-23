@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rulesVersion": 7,
+  "rulesVersion": 8,
   "updatedAt": "2026-11-20",
   "feedLimit": 10,
   "platforms": {
@@ -29,6 +29,7 @@
         "section span:has(> a[href*=\"/liked_by/\"])"
       ],
       "exploreSelectors": ["a[href*=\"/p/\"]", "a[href*=\"/reel/\"]"],
+      "exploreReelSelectors": ["a[href*=\"/reel/\"]"],
       "explorePaths": ["/explore"],
       "linkRedirects": [
         { "host": "l.instagram.com", "param": "u" },
