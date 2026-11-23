@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rulesVersion": 8,
+  "rulesVersion": 9,
   "updatedAt": "2026-11-20",
   "feedLimit": 10,
   "platforms": {
@@ -48,8 +48,7 @@
       "virtualizedFeed": true,
       "feedCutoffExcludePaths": ["/p", "/explore", "/direct", "/stories", "/accounts"],
       "hideSelectors": [
-        "article a[href*='/reel/']",
-        "a[href='/reels/']"
+        "article a[href*='/reel/']"
       ],
       "hideTextLabels": [],
       "recommendationSelectors": [],
