@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "rulesVersion": 9,
-  "updatedAt": "2026-11-20",
+  "rulesVersion": 11,
+  "updatedAt": "2026-11-25",
   "feedLimit": 10,
   "platforms": {
     "instagram": {
@@ -19,6 +19,68 @@
       },
       "allowedHosts": ["instagram.com", "facebook.com"],
       "externalHosts": ["messenger.com"],
+      "loginFailedNotice": {
+              "en": {
+                      "text": "Couldn't log in. Check your username and password and try again."
+              },
+              "ru": {
+                      "text": "Не удалось войти. Проверь логин и пароль и попробуй ещё раз."
+              },
+              "de": {
+                      "text": "Anmeldung fehlgeschlagen. Prüfe Benutzernamen und Passwort und versuche es erneut."
+              },
+              "es": {
+                      "text": "No se pudo iniciar sesión. Comprueba tu usuario y contraseña e inténtalo de nuevo."
+              },
+              "fr": {
+                      "text": "Connexion impossible. Vérifie ton identifiant et ton mot de passe, puis réessaie."
+              },
+              "pt": {
+                      "text": "Não foi possível entrar. Confira seu usuário e senha e tente novamente."
+              },
+              "tr": {
+                      "text": "Giriş yapılamadı. Kullanıcı adını ve şifreni kontrol edip tekrar dene."
+              },
+              "id": {
+                      "text": "Gagal masuk. Periksa nama pengguna dan kata sandi, lalu coba lagi."
+              },
+              "uk": {
+                      "text": "Не вдалося увійти. Перевір логін і пароль та спробуй ще раз."
+              },
+              "kk": {
+                      "text": "Кіру мүмкін болмады. Логин мен құпия сөзді тексеріп, қайта көріңіз."
+              },
+              "ar": {
+                      "text": "تعذر تسجيل الدخول. تحقق من اسم المستخدم وكلمة المرور وحاول مرة أخرى."
+              },
+              "hi": {
+                      "text": "लॉग इन नहीं हो सका। अपना यूज़रनेम और पासवर्ड जाँचें और फिर से कोशिश करें।"
+              },
+              "it": {
+                      "text": "Impossibile accedere. Controlla nome utente e password e riprova."
+              },
+              "pl": {
+                      "text": "Nie udało się zalogować. Sprawdź nazwę użytkownika i hasło i spróbuj ponownie."
+              },
+              "ja": {
+                      "text": "ログインできませんでした。ユーザー名とパスワードを確認して、もう一度お試しください。"
+              },
+              "ko": {
+                      "text": "로그인하지 못했습니다. 사용자 이름과 비밀번호를 확인하고 다시 시도하세요."
+              },
+              "vi": {
+                      "text": "Không đăng nhập được. Hãy kiểm tra tên người dùng và mật khẩu rồi thử lại."
+              },
+              "th": {
+                      "text": "เข้าสู่ระบบไม่สำเร็จ ตรวจสอบชื่อผู้ใช้และรหัสผ่านแล้วลองอีกครั้ง"
+              },
+              "uz": {
+                      "text": "Kirib bo‘lmadi. Login va parolni tekshirib, qayta urinib ko‘ring."
+              },
+              "ky": {
+                      "text": "Кирүү мүмкүн болган жок. Логин менен сырсөздү текшерип, кайра аракет кылыңыз."
+              }
+      },
       "likeCountTextLabels": [
         "нравится»", "отметок", "likes", "просмотр", "views", "plays", "воспроизвед"
       ],
@@ -131,6 +193,7 @@
     "youtube": {
       "homeUrl": "https://m.youtube.com/",
       "allowedHosts": ["youtube.com", "google.com"],
+      "externalHosts": ["play.google.com"],
       "chromeColor": "#FFFFFF",
       "chromeColorDark": "#0F0F0F",
       "feedItemSelectors": [
